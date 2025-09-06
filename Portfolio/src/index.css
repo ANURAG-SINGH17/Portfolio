@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: anuFont;
+  src: url('./assets/fonts/Rejouice-Headline.ttf');
+}
+
+@font-face{
+  font-family: anuFont2;
+  src: url('./assets/fonts/NBInternationalProBoo.ttf');
+}
+
+.myfont{
+  font-family: anuFont;
+}
