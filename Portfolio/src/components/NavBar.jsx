@@ -91,18 +91,26 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
               : "bg-white/80 border-zinc-100 text-zinc-700"}`}
         >
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`px-4 py-2 rounded-2xl transition-all duration-300 
-                ${isDarkMode 
-                  ? "hover:bg-white hover:text-black" 
-                  : "hover:bg-black hover:text-white"}`}
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
+  item.type === "anchor" ? (
+    <a
+      key={item.to}
+      href={item.to}
+      className="px-3 py-1 rounded-2xl transition-all duration-300 
+        hover:bg-black hover:text-white"
+    >
+      {item.label}
+    </a>
+  ) : (
+    <Link
+      key={item.to}
+      to={item.to}
+      className="px-3 py-1 rounded-2xl transition-all duration-300 
+        hover:bg-black hover:text-white"
+    >
+      {item.label}
+    </Link>
+  )
+))}
         </div>
       )}
     </div>

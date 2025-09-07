@@ -232,7 +232,7 @@ const ProjectSection = ({isDarkMode , setIsDarkMode}) => {
               Want to see more of my work?
             </p>
             <Link
-              to="/projects"
+              to="/all_projects"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
