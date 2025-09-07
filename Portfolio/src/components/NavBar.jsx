@@ -2,19 +2,21 @@ import React, { useState } from 'react'
 import { Sun } from 'lucide-react';
 import { IoMoonOutline } from "react-icons/io5";
 import { Menu, X } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const NavBar = ({ isDarkMode, setIsDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '/projects', label: 'All Projects' , target: '_blank', rel: 'noopener noreferrer' },
-    { href: '#contact', label: 'Contact' },
-    { href: '#services', label: 'My Services' },
-  ];
+  { type: "anchor", to: "#home", label: "Home" },
+  { type: "anchor", to: "#about", label: "About" },
+  { type: "anchor", to: "#skills", label: "Skills" },
+  { type: "anchor", to: "#projects", label: "Projects" },
+  { type: "anchor", to: "#contact", label: "Contact" },
+  { type: "anchor", to: "#services", label: "My Services" },
+  { type: "route", to: "/all_projects", label: "All Projects" }, // extra page
+];
+
 
   return (
     <div
@@ -35,19 +37,27 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
             : " border-zinc-100 text-zinc-700"}`}
       >
         {navItems.map((item) => (
-          <a
-            key={item.href}
-            href={item.href}
-            target={item.target}
-            rel={item.rel}
-            className={`px-3 py-1 rounded-2xl transition-all duration-300 
-              ${isDarkMode 
-                ? "hover:bg-white hover:text-black" 
-                : "hover:bg-black hover:text-white"}`}
-          >
-            {item.label}
-          </a>
-        ))}
+  item.type === "anchor" ? (
+    <a
+      key={item.to}
+      href={item.to}
+      className="px-3 py-1 rounded-2xl transition-all duration-300 
+        hover:bg-black hover:text-white"
+    >
+      {item.label}
+    </a>
+  ) : (
+    <Link
+      key={item.to}
+      to={item.to}
+      className="px-3 py-1 rounded-2xl transition-all duration-300 
+        hover:bg-black hover:text-white"
+    >
+      {item.label}
+    </Link>
+  )
+))}
+
       </div>
 
       {/* Dark Mode + Hamburger */}

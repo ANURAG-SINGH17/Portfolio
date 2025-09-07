@@ -4,7 +4,7 @@ import { Code, Brush, Layers, MonitorSmartphone } from "lucide-react";
 const services = [
   {
     title: "Web Development",
-    desc: "High-quality and scalable websites using modern frameworks like React, Next.js, and Node.js.",
+    desc: "High-quality and scalable websites using modern frameworks like React, and Node.js.",
     icon: <Code className="w-8 h-8" />,
   },
   {
