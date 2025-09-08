@@ -78,7 +78,7 @@ const projects = [
     technologies: ["Html", "CSS", "JavaScript", "Gsap", "locomotive"],
     image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPa_kM96wyyeIJ-KzRearvFk9onwnn3oOTyw&s",
     github:"https://github.com/ANURAG-SINGH17/DUO-STUDIO",
-    Link:"https://anurag-singh17.github.io/DUO-STUDIO/",
+    link:"https://anurag-singh17.github.io/DUO-STUDIO/",
     fullstack: false,
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     technologies: ["Html", "CSS", "JavaScript", "Gsap", "locomotive"],
     image:"https://assets.awwwards.com/awards/submissions/2023/02/63ed11e78e091496655329.png",
     github:"https://github.com/ANURAG-SINGH17/CYBERFICTION",
-    Link:"https://anurag-singh17.github.io/CYBERFICTION/",
+    link:"https://anurag-singh17.github.io/CYBERFICTION/",
     fullstack: false,
   },
   {
@@ -96,7 +96,7 @@ const projects = [
     technologies: ["Html", "CSS", "JavaScript", "Gsap", "locomotive"],
     image:"https://www.cssdesignawards.com/cdasites/2023/202309/20230914161045.jpg",
     github:"https://github.com/ANURAG-SINGH17/REJOUICE",
-    Link:"https://anurag-singh17.github.io/REJOUICE/",
+    link:"https://anurag-singh17.github.io/REJOUICE/",
     fullstack: false,
   },
   {
@@ -105,7 +105,7 @@ const projects = [
     technologies: ["Html", "CSS", "JavaScript", "Gsap", "locomotive"],
     image:"https://assets.awwwards.com/awards/sites_of_the_day/2023/08/two-good-co-1.jpg",
     github:"https://github.com/ANURAG-SINGH17/Two-Good-Co.-?tab=readme-ov-file",
-    Link:"https://anurag-singh17.github.io/Two-Good-Co.-/",
+    link:"https://anurag-singh17.github.io/Two-Good-Co.-/",
     fullstack: false,
   },
 ];
