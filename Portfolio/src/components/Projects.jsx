@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp, Sun, Moon,  ExternalLink, Github} from "lucide-
 
 const projects = [
   {
-    name: "AI Study Assistent",
+    name: "AI Study Assistant",
     description:
       "AI-Based Study Assistant An intelligent, full-stack study assistant web application that allows students to upload PDF notes and receive: Summarized, quizzes, True/False, questions Q&A based on the document ",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Gsap"],
