@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ProjectSection = ({isDarkMode , setIsDarkMode}) => {
   const projects = [
     {
-      title: 'AI Study Assistent',
+      title: 'AI Study Assistant',
       description: 'AI-Based Study Assistant An intelligent, full-stack study assistant web application that allows students to upload PDF notes and receive: Summarized, quizzes, True/False, questions Q&A based on the document ',
       technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Gemini AI', 'Gsap'],
       image: 'https://epe.brightspotcdn.com/dims4/default/0495656/2147483647/strip/true/crop/7063x4793+52+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2Fcb%2Fcd%2Ff8213ccb4203abdae3aad13a1eef%2Fai-gpt-teacher-08162022-966654886-949652688.jpg',
